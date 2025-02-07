@@ -2,6 +2,10 @@ const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
 const productRoute = require("../routes/productRoute.js");
+const dotenv = require("dotenv")
+
+dotenv.config();
+const PORT = process.env.PORT
 
 app.get("/", function (req, res) {
   res.send("Hello World test");
@@ -11,8 +15,8 @@ app.get("/", function (req, res) {
 app.use("/api/products", productRoute);
 
 //establish localhost
-app.listen(3000, () => {
-  console.log("listening on port 3000");
+app.listen(PORT, () => {
+  console.log("listening on port " + PORT);
 });
 
 //establish MongoDB connection
