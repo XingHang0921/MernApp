@@ -1,90 +1,47 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.mainPage{
+  margin:0;
+  padding:0;
+  height: 100%;
 }
-header{
+.top{
   background-color: #1B512D;
   top:0;
   position: sticky;
   z-index:10;
   height: 95px;
-  
+  margin: 0;
+
 }
-.navBar{
+.top .navBar{
   display: flex;
   align-items: center;
-  padding: 20px;
-  max-width: 1300px;
-  margin: auto;
-  padding-left: 25px;
-  padding-right: 25px;
-  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: space-between;
 }
-.logo{
-  width:10px;
+.top .navBar .logo{
+  margin-left: 40px;
 }
-.search{
-  display: flex;
-  align-items: center;
+.top .navBar .search{
   background-color: white;
-  border: 2px soild;
   width: max-content;
-  border-radius: 30px;
-}
-.searchInput{
-  border: none;
-  outline: none; 
-  background: transparent; 
-  padding: 15px;
-  font-size: medium;
-  width:580px;
-  height: 40px;
-  
-}
-.searchInput:focus{
-  border-color: blue;
-}
-.searchIcon{
-  width: 2.5em;
-  padding-left: 10px;
-}
-nav{
-  flex:1;
-  text-align:right;  
-}
-nav ul{
-  list-style-type: none;
-}
-nav ul li{
-  display: inline-block;
-  margin-right: 20px;
-}
-a{
-  text-decoration: none;
-  color:white; 
-}
-
-
-.row{
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  align-items:center;
+  border-radius: 28px;
 }
-.advertize{
-  flex-basis: 50%;
+.top .navBar .search button{
+  display: none;
 }
-.advertize{
-  flex-basis: 50%;
+.top .navBar .search .searchIcon{
+  width: 45px;
+  color: green;
+  margin-right: 10px;
 }
-.advertize img{
-  max-width: 100%;
-  padding: 50px 30px ;
-}
-.advertize h1{
-padding-left: 50px;
-}
-.advertize p{
-  padding-left: 90px;
+.top .navBar .search .searchInput{
+  font-size: medium;
+  margin-left: 14px;
+  background: transparent;
+  outline: none;
+  border: none;
+  background: transparent;
+  width: 480px;
 }
