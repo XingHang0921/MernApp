@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import homePageImage from './assets/homePageImage.jpg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import searchIcon from './assets/searchIcon.png'
+import logo from './assets/homePageImage.jpg'
 
 function App() {
 
@@ -11,9 +12,14 @@ function App() {
       <header className=''>
         <div className='narBar'>
           <div className='logo'>
-              <img src="" alt="Logo"/>
+              {/* <img src={logo} alt="" /> */}
           </div>
-          <input type="search"></input>
+          
+          <form action="search" className='search'>
+            <img src={searchIcon} className='searchIcon' alt="" />
+            <input className='searchInput' type="text" 
+              placeholder='Search In-Store Item'/>
+          </form>
 
           <nav>
             <ul>

@@ -8,6 +8,7 @@ header{
   top:0;
   position: sticky;
   z-index:10;
+  height: 95px;
   
 }
 .navBar{
@@ -19,6 +20,34 @@ header{
   padding-left: 25px;
   padding-right: 25px;
   flex-wrap: wrap;
+}
+.logo{
+  width:10px;
+}
+.search{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 2px soild;
+  width: max-content;
+  border-radius: 30px;
+}
+.searchInput{
+  border: none;
+  outline: none; 
+  background: transparent; 
+  padding: 15px;
+  font-size: medium;
+  width:580px;
+  height: 40px;
+  
+}
+.searchInput:focus{
+  border-color: blue;
+}
+.searchIcon{
+  width: 2.5em;
+  padding-left: 10px;
 }
 nav{
   flex:1;
@@ -35,6 +64,7 @@ a{
   text-decoration: none;
   color:white; 
 }
+
 
 .row{
   display: flex;
