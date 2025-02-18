@@ -26,7 +26,7 @@ function App() {
             </div>
             <div className='nav'>
               <ul>
-                <li><a href="">My Account</a></li>
+                <li><a href="">Local Store</a></li>
                 <li><a href="">Log In</a></li>
                 <li><a href="">Cart</a></li>
               </ul>

@@ -1,4 +1,4 @@
-.mainPage{
+body{
   margin:0;
   padding:0;
   height: 100%;
@@ -8,18 +8,20 @@
   top:0;
   position: sticky;
   z-index:10;
-  height: 95px;
+  height: 90px;
+  display:flex;
   margin: 0;
 
 }
 .top .navBar{
   display: flex;
   align-items: center;
-  justify-content: center;
-  justify-items: space-between;
+  justify-content: space-between;
+  width: 100%;
 }
 .top .navBar .logo{
-  margin-left: 40px;
+  margin-left:100px;
+
 }
 .top .navBar .search{
   background-color: white;
@@ -27,13 +29,13 @@
   display: flex;
   align-items:center;
   border-radius: 28px;
+  margin-left:70px;
 }
 .top .navBar .search button{
   display: none;
 }
 .top .navBar .search .searchIcon{
   width: 45px;
-  color: green;
   margin-right: 10px;
 }
 .top .navBar .search .searchInput{
@@ -42,6 +44,23 @@
   background: transparent;
   outline: none;
   border: none;
-  background: transparent;
-  width: 480px;
+  width: 680px;
+}
+.nav{
+  display:flex;
+  justify-content:flex-end;
+}
+.nav ul{
+  list-style:none;
+  display:flex;
+  gap:20px;
+
+}
+.nav ul li{
+  display:block;
+}
+.nav ul li a{
+  color: white;
+  text-decoration:none;
+  padding:10px 15px;
 }
