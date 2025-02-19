@@ -79,17 +79,20 @@ body{
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
-  justify-content: flex-start; 
+  justify-content: center; 
 }
 .top2 .listContainer{
-  padding-left: 700px;
+  display: flex;
+  justify-content: flex-start;
 }
 .top2 ul{
   list-style: none;
+  display: flex;
+  gap: 20px;
 }
 .top2 ul li{
   display: inline;
-  margin-right: 20px;
+
 }
 .top2 ul li a{
   color: green;
