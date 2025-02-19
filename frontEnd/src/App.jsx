@@ -33,6 +33,17 @@ function App() {
             </div>
           </div>
         </header>
+        <div className='top2'>
+          <div className='listContainer'>
+            <ul>
+              <li><a href="">Browse In-Store</a></li>
+              <li><a href="">Weekly Sales</a></li>
+              <li><a href="">Best-Seller</a></li>
+              <li><a href="">New-Arrival</a></li>
+              <li><a href="">Coming Soon</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
       
 

@@ -3,6 +3,11 @@ body{
   padding:0;
   height: 100%;
 }
+.mainPage{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 .top{
   background-color: #1B512D;
   top:0;
@@ -16,13 +21,14 @@ body{
 .top .navBar{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
 }
+
 .top .navBar .logo{
   margin-left:100px;
-
 }
+
 .top .navBar .search{
   background-color: white;
   width: max-content;
@@ -46,9 +52,11 @@ body{
   border: none;
   width: 680px;
 }
+
 .nav{
   display:flex;
   justify-content:flex-end;
+  min-width: max-content;
 }
 .nav ul{
   list-style:none;
@@ -63,4 +71,30 @@ body{
   color: white;
   text-decoration:none;
   padding:10px 15px;
+}
+
+.top2{
+  background-color:rgb(248, 242, 242) ;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+}
+.top2 .listContainer{
+  padding-left: 700px;
+}
+.top2 ul{
+  list-style: none;
+}
+.top2 ul li{
+  display: inline;
+  margin-right: 20px;
+}
+.top2 ul li a{
+  color: green;
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+  outline: none;
 }
