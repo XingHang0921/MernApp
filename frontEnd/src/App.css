@@ -16,6 +16,7 @@ body{
   height: 90px;
   display:flex;
   margin: 0;
+  width: 100%;
 
 }
 .top .navBar{
@@ -31,11 +32,11 @@ body{
 
 .top .navBar .search{
   background-color: white;
-  width: max-content;
   display: flex;
   align-items:center;
   border-radius: 28px;
   margin-left:70px;
+  width: 680px;
 }
 .top .navBar .search button{
   display: none;
@@ -48,9 +49,15 @@ body{
   font-size: medium;
   margin-left: 14px;
   background: transparent;
-  outline: none;
   border: none;
-  width: 680px;
+  outline: none;
+  box-sizing:content-box;
+  width: 100%;
+
+}
+.top .navBar .search .search:focus-within{
+  outline: 125px;
+  outline-color: aqua;
 }
 
 .nav{
@@ -69,7 +76,8 @@ body{
 }
 .nav ul li a{
   color: white;
-  text-decoration:none;
+  text-decoration: none;
+  font-weight: bold;
   padding:10px 15px;
 }
 
@@ -78,12 +86,20 @@ body{
   width: 100%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   display: flex;
+  position: sticky;
+  top:0;
+  z-index:10;
+  height: 56px;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
+  margin: 0 auto;
 }
 .top2 .listContainer{
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
+}
+.top2 .listContainer .block{
+  width: 500px;
 }
 .top2 ul{
   list-style: none;
@@ -100,4 +116,24 @@ body{
   font-size: large;
   font-weight: bold;
   outline: none;
+}
+.top2 ul li a:hover{
+  text-decoration: underline;
+}
+
+.mainBodyContainer{
+  height: 100%;
+  background-color: blue;
+  align-items: center;
+  justify-content: center;
+}
+.mainBody{
+  background-color: black;
+  width: 1400px;
+
+}
+
+
+.footerContainter{
+  margin-top:auto;
 }
