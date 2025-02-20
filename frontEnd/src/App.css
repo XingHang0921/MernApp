@@ -99,7 +99,7 @@ body{
   align-items: center;
 }
 .top2 .listContainer .block{
-  width: 500px;
+  width: 450px;
 }
 .top2 ul{
   list-style: none;
@@ -126,11 +126,13 @@ body{
   background-color: blue;
   align-items: center;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 .mainBody{
-  background-color: black;
-  width: 1400px;
-
+  background-color: white;
+  width: 1300px;
+  height: 100%;
 }
 
 
