@@ -33,6 +33,37 @@ function App() {
             </div>
           </div>
         </header>
+        <div className='top2'>
+          <div>
+            <div className='listContainer'>
+              <ul>
+                <li><a href="">Browse In-Store</a></li>
+                <li><a href="">Weekly Sales</a></li>
+                <li><a href="">Best-Seller</a></li>
+                <li><a href="">New-Arrival</a></li>
+                <li><a href="">Coming Soon</a></li>
+              </ul>
+              <div className='block'></div>
+            </div>
+          </div>
+        </div>
+
+        <div className='mainBodyContainer'>
+          <div className='mainBody'>
+
+          </div>
+        </div>
+
+
+
+        <div className='footerContainer'>
+          <footer>
+            <small>
+              Copyright © 2025 shoe shoe shoe. All Rights Reserved.
+            </small>
+          </footer>
+        </div>
+        
       </div>
       
 
