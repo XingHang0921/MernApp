@@ -11,7 +11,6 @@ body{
   height: 90px;
   display:flex;
   margin: 0;
-
 }
 .top .navBar{
   display: flex;
@@ -21,11 +20,11 @@ body{
 }
 .top .navBar .logo{
   margin-left:100px;
-
+  flex:1;
 }
 .top .navBar .search{
   background-color: white;
-  width: max-content;
+  flex:2 2 auto;
   display: flex;
   align-items:center;
   border-radius: 28px;
@@ -37,6 +36,7 @@ body{
 .top .navBar .search .searchIcon{
   width: 45px;
   margin-right: 10px;
+  flex:1;
 }
 .top .navBar .search .searchInput{
   font-size: medium;
@@ -44,11 +44,12 @@ body{
   background: transparent;
   outline: none;
   border: none;
-  width: 680px;
+  flex:2 2 680px;
 }
 .nav{
   display:flex;
   justify-content:flex-end;
+  flex:1;
 }
 .nav ul{
   list-style:none;
@@ -63,4 +64,5 @@ body{
   color: white;
   text-decoration:none;
   padding:10px 15px;
+  flex:1;
 }
