@@ -1,7 +1,6 @@
-body{
-  margin:0;
-  padding:0;
-  height: 100%;
+html body{
+  margin: 0;
+  padding: 0;
 }
 .mainPage{
   display: flex;
@@ -13,21 +12,21 @@ body{
   top:0;
   position: sticky;
   z-index:10;
-  height: 90px;
+  height: 14%;
   display:flex;
+  justify-content: center;
   margin: 0;
   width: 100%;
 
 }
 .top .navBar{
   display: flex;
+  width: 80%;
   align-items: center;
   justify-content: center;
-  width: 100%;
 }
 
 .top .navBar .logo{
-  margin-left:100px;
 }
 
 .top .navBar .search{
@@ -36,7 +35,7 @@ body{
   align-items:center;
   border-radius: 28px;
   margin-left:70px;
-  width: 680px;
+  max-width: 680px;
 }
 .top .navBar .search button{
   display: none;
@@ -56,11 +55,6 @@ body{
   width: 100%;
 
 }
-.top .navBar .search .search:focus-within{
-  outline: 125px;
-  outline-color: aqua;
-}
-
 .nav{
   display:flex;
   justify-content:flex-end;
@@ -97,18 +91,17 @@ body{
 }
 .top2 .listContainer{
   display: flex;
-  align-items: center;
 }
-.top2 .listContainer .block{
-  width: 450px;
-}
+/* .top2 .listContainer .block{
+  width: max-content;
+} */
 .top2 ul{
   list-style: none;
   display: flex;
   gap: 20px;
 }
 .top2 ul li{
-  display: inline;
+  display: inline-block;
 
 }
 .top2 ul li a{
@@ -132,7 +125,7 @@ body{
 }
 .mainBody{
   background-color: white;
-  width: 1300px;
+  width: 70%;
   height: 100%;
 }
 

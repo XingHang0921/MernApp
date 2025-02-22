@@ -43,7 +43,7 @@ function App() {
                 <li><a href="">New-Arrival</a></li>
                 <li><a href="">Coming Soon</a></li>
               </ul>
-              <div className='block'></div>
+              {/* <div className='block'></div> */}
             </div>
           </div>
         </div>
